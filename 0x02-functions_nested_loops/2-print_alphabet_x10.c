@@ -1,27 +1,23 @@
 #include "main.h"
 /**
-* print_alphabet_x10 - print the alphabet 10X
-* return - no need
+* print_alphabet_x10 - prints alphabet 10 times
+* Return: void
 **/
 void print_alphabet_x10(void)
 {
+	char c;
+	int i = 0;
 
-	int a, e;
-
-	a = 0;
-	while (a < 10)
+	while (i < 10)
 		{
-	e = 'a';
-	while (e <= 'z')
+	c = 'a';
+	while (c <= 'z')
 		{
-	_putchar(e);
-	e++;
+	_putchar(c);
+	c++;
 		}
 	_putchar('\n');
-	a++;
+	i++;
 		}
 }
 
-Footer
-
-© 2022 GitHub, Inc.
