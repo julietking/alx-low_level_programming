@@ -3,7 +3,7 @@
 /**
 * main - program that prints the first 50 fib numbers
 * Return: always 0.
- */
+*/
 int main(void)
 {
 	int i = 0;
