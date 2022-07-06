@@ -14,7 +14,7 @@ int main(void)
 		res = a + b;
 		a = b;
 		b = res;
-		prinif("%lu", res);
+		printf("%lu", res);
 		printf(", ");
 		i++;
 	}
