@@ -3,7 +3,7 @@
 * print_times_table - prints n times table
 * @n: number of times to print the times table
 * Return: void
-**/
+*/
 void print_times_table(int n)
 {
 	int i = 0, j = 0, result = 0;
@@ -19,19 +19,19 @@ void print_times_table(int n)
 			{
 				_putchar(result + '0');
 			}
-			else if (resilt < 10)
+			else if (result < 10)
 			{
 				_putchar(',');
-				_putchar('');
-				_putchar('');
-				_putchar('');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(result + '0');
 			}
 			else if (result >= 10 && result < 100)
 			{
 				_putchar(',');
-				_putchar('');
-				_putchar('');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
 			}
