@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_square -> printing line
  * @size: integer params
@@ -13,7 +14,7 @@ void print_sqaure(int size)
 	{
 		for (x = 0; x < size; x++)
 		{
-			for (x = 0; x < size; x++)
+			for (x = 0; y < size; y++)
 			{
 			_putchar(35);
 			}
