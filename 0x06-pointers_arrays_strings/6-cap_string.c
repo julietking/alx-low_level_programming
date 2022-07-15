@@ -2,32 +2,25 @@
 
 /**
  * cap_string -> capitalization function
- * @s: string param
+ * @x: string param
  * Return: capitalized version of the string
  */
-
-char *cap_string(char *s)
+char *cap_string(char *x)
 {
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	nt ia = 0;
-	int ib;
-
-	char str[] = " \t\n,;.!,?\"(){}\0";
-
-	if (s[ia] >= 'a' && s[ia] <= 'z')
-		s[ia] = s[ia] - 32;
-
-	while (s[ia] != '\0')
+	while (x[a])
 	{
-		if (s[ia] >= 'a' && s[ia] <= 'z')
+		i = 0;
+		while (i < len)
 		{
-			for (ib = 0; str[ib] != '\0'; ib++)
-			{
-				if (s[ia - 1] == str[ib])
-					s[ia] = s[ia] - 32;
-			}
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
 		}
-		ia++;
+		a++;
 	}
-	return (s);
+	return (x);
 }
