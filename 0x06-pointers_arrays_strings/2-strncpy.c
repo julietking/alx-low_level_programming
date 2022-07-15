@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * strncpy -> for copying purpose
+ * _strncpy -> for copying purpose
  * @dest: param2
  * @src: param2
  * @n: param3
